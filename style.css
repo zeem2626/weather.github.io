@@ -1,0 +1,201 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%
+}
+
+body{    
+    background-image: linear-gradient(#68c0f0, rgb(180, 207, 248), 
+    #6ec9fdbd);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+}
+
+/* !!!!!!!!!!!!!!!  CONTAINER  !!!!!!!!!!!!!!!! */
+
+.container{
+    height: 71rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+/* !!!!!!!!!!!!!!!  SEARCH !!!!!!!!!!!!!!!! */
+
+.search{
+    display: flex;
+    max-width: 30rem;
+    justify-content: space-between;
+    margin: 0 auto;
+    opacity: 0.55;
+}
+
+.search input[type="text"], .search input[type="submit"]{
+    color: #4d4848;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    font-style: italic;
+}
+
+.search input[type="text"]{
+    border-radius: 2rem ;
+    padding: 0 2rem;
+
+}
+
+.search input[type="submit"]{
+    border-radius: 50% ;
+    font-size: 1.5rem ;
+    padding: 0.6rem 0.8rem;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!  REGION INFORMATION !!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.region_information{
+    /* border: 2px solid yellow; */
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 0.5rem;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!  WEATHER ICON  !!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.region_temperature_details .data1 .image{
+    flex-grow: 2;
+    text-align: center;
+}
+.region_temperature_details .data1 img{
+    height: 100%;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!   SECTION1   !!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.section1{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!   search_bar   !!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.search_bar{
+    padding-top: 1rem;
+    flex-grow: 2;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!   region_temperature_details   !!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.region_temperature_details{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    flex-grow: 19;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!   SECTION2   !!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.section2{
+    padding: 1.2rem;
+    flex-grow: 2;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!   DATA1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.data1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align:start;
+    width: 80%;
+    height: 80%;
+    font-size: 2rem;
+}
+
+.data1 .temp{
+    font-size: 7rem;
+    flex-grow: 5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.data1 .temp .degree_symbol{
+    font-size: 2rem;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!   DATA2  !!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.data2{
+    max-width: 50rem;
+    margin: 0 auto;
+    padding:2rem 1.5rem 0 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    font-size: 1.6rem;
+    border-radius: 1rem;
+    background-image: linear-gradient(rgba(53, 49, 49, 0.068), rgba(37, 36, 37, 0.048), 
+    rgba(40, 44, 39, 0.055));
+}
+
+.data2A, .data2B{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.data{
+    text-align: center;
+    box-sizing: border-box;
+    height: 5rem;
+    padding: 1rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.data span{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!! MEDIA QUERY !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+@media only screen and (min-width: 768px) {
+    *{
+        font-size: 3rem;
+        box-sizing:content-box;
+
+    }
+    .container{
+        padding-top: 10rem;
+        display: flex;
+        flex-direction: row;
+        max-height: 70rem;
+        max-width: 120rem;
+        margin: auto;
+    }
+    .data1 .temp .value{
+        font-size: 12rem;
+    }
+    .data1 .condition{
+        font-size: 4rem;
+    }
+    .search input[type="text"], .search input[type="submit"]{
+        font-size: 2rem;   
+    }
+    .search{
+        max-width: 40rem;
+    }
+}
