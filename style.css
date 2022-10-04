@@ -129,7 +129,8 @@ body{
 /* !!!!!!!!!!!!!!!!!!!!!!!!!   DATA2  !!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 .data2{
-    max-width: 34rem;
+    max-width: 40rem;
+    margin: 0 auto;
     padding:2rem 1.5rem 0 1.5rem;
     flex-grow: 1;
     display: flex;
@@ -160,6 +161,3 @@ body{
     font-weight: 600;
     margin-top: 0.5rem;
 }
-
-
-
